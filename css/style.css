@@ -301,6 +301,11 @@ html {
   bottom: 100px;
   right: 20px;
 }
+@media (max-width: 400px) {
+  .s_container #s1 .post-it img {
+    width: 80%;
+  }
+}
 .s_container #s2 .s2_content {
   margin: 50px 0;
   padding: 0 20px;
