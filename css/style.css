@@ -231,6 +231,7 @@ html {
   z-index: 999;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   transition: 0.5s ease-in;
+  white-space: nowrap;
 }
 @media (min-width: 700px) {
   .board_wrap .menu_wrap {
