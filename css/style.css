@@ -745,7 +745,7 @@ body.Open .board_wrap .menu_wrap {
 .s_container .detail_text h3 {
   font-size: 28px;
   position: relative;
-  margin: 28px 0;
+  margin: 30px 0;
 }
 .s_container .detail_text h3:after {
   position: absolute;
