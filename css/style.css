@@ -364,6 +364,11 @@ html {
   padding: 0 40px;
   max-width: 1500px;
 }
+@media (max-width: 400px) {
+  .s_container #s3 .s3_wrap {
+    padding: 0;
+  }
+}
 .s_container #s3 .s3_card_wrap_a {
   display: block;
   margin-bottom: 40px;
