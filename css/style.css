@@ -690,6 +690,7 @@ body.Open .board_wrap .menu_wrap {
   }
   .s_container #s2 .s2_profile {
     margin-top: 0;
+    width: 35%;
   }
   .s_container #s2 .s2_profile .skills .skill_wrap {
     padding: 12px 0;
