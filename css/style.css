@@ -307,6 +307,9 @@ html {
     width: 80%;
   }
 }
+.s_container #s2 {
+  margin: 50px 0;
+}
 .s_container #s2 .s2_content {
   margin: 50px 0;
   padding: 0 20px;
@@ -352,11 +355,11 @@ html {
   max-width: 55px;
 }
 .s_container #s3 {
-  margin: 100px 0;
+  margin: 150px 0 100px;
 }
 @media (min-width:1000px) {
   .s_container #s3 {
-    margin: 200px 0;
+    margin: 250px 0 200px;
   }
 }
 .s_container #s3 .s3_wrap {
@@ -1010,6 +1013,15 @@ body.Open .board_wrap .menu_wrap {
   .s_container .detail_img {
     max-width: none;
   }
+}
+#s1 > *, #s2 .h2title, #s2 .s2_content > *, #s2 .skill_wrap > *, #s3 .h2title, #s3 .s3_wrap > a, #s4 .h2title {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+#s4 .s4_wrap > * {
+  opacity: 0;
+  transform: translateX(-30px);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector('.menu_btn');
 const $body = document.querySelector('body');
 const menuNav = document.querySelector('.menu_wrap');
+const topBtn = document.querySelectorAll('.btm_items_left span');
 
 menuBtn.addEventListener('click',()=>{
   $body.classList.toggle('Open');
@@ -31,3 +32,14 @@ var swiper = new Swiper(".detailSwiper", {
 });
 
 
+
+
+topBtn.forEach(()=>{
+  topBtn[0].addEventListener('click',(e)=>{
+    location.replace('index.html');
+  })
+
+  topBtn[1].addEventListener('click',(e)=>{
+    location.replace('index.html#s3');
+  })
+})

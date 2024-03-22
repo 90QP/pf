@@ -56,3 +56,88 @@ topBtn.forEach(()=>{
     })
   })
 })
+
+
+// GSAP
+const sections = document.querySelectorAll('section')
+
+const io = new IntersectionObserver((entries, observer)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting){
+      const objName = entry.target.id   //내가 보고있는 section의 id만 인식
+      funcObj[objName]();
+    }
+  })
+})
+
+let funcObj = {
+  s1 : function(){
+    const tl = gsap.timeline();
+    tl.to('#s1 > *' , {
+      opacity:1,
+      delay:0.3,
+      duraction:0.5,
+      stagger:0.3,
+      y:0
+    })
+  },
+  s2 : function(){
+    const tl = gsap.timeline();
+    tl.to('#s2 .h2title', {
+      opacity:1,
+      duraction:0.5,
+      stagger:0.3,
+      y:0
+    })
+
+    tl.to('#s2 .s2_content > *', {
+      opacity:1,
+      duraction:0.5,
+      stagger:0.3,
+      y:0
+    })
+
+    tl.to('#s2 .skill_wrap > *' , {
+      opacity:1,
+      duraction:0.3,
+      stagger:0.1,
+      y:0
+    })
+  },
+  s3 : function(){
+    const tl = gsap.timeline();
+    tl.to('#s3 .h2title', {
+      opacity:1,
+      duraction:0.5,
+      stagger:0.3,
+      y:0
+    })
+
+    tl.to('#s3 .s3_wrap > a', {
+      opacity:1,
+      duraction:0.4,
+      stagger:0.2,
+      y:0
+    })
+  },
+  s4 : function(){
+    const tl = gsap.timeline();
+    tl.to('#s4 .h2title', {
+      opacity:1,
+      delay:0.3,
+      duraction:0.5,
+      stagger:0.3,
+      y:0
+    })
+
+    tl.to('#s4 .s4_wrap > *' , {
+      opacity:1,
+      duraction:0.5,
+      stagger:0.3,
+      x:0
+    })
+  }
+}
+
+
+sections.forEach( section => io.observe(section))
