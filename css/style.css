@@ -767,14 +767,15 @@ body.Open .board_wrap .menu_wrap {
     right: 10%;
   }
 }
-@media (min-width:1400px) {
+@media (min-width:1000px) {
   .s_container .detail_text h3:after {
-    width: 120px;
-    height: 120px;
+    right: -20px;
   }
 }
 @media (min-width:1400px) {
   .s_container .detail_text h3:after {
+    width: 120px;
+    height: 120px;
     right: 30%;
   }
 }
